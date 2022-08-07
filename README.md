@@ -175,4 +175,10 @@ curl -s -d '{"jsonrpc": "2.0", "method": "validators", "id": "dontcare", "params
 ```
 
 
+![img](./images/01_required.png)
+![img](./images/02_minimum.png)
+![img](./images/03_hetzner1.png)
+![img](./images/04_hetzner2.png)
+
+
 

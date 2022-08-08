@@ -83,6 +83,7 @@ cp ~/.near-credentials/shardnet/<accountId>.shardnet.near.json ~/.near/validator
 # Change in validator_key.json private_key to secret_key
 
 ```
+![img](./images/06_near_login.png)
 - Set up service as daemon
 
 ```
@@ -117,6 +118,9 @@ sudo systemctl start neard
 sudo journalctl -n 100 -f -u neard | ccze -A
 
 ```
+![img](./images/05_neard_log.png)
+- After near login to complete it type your near address
+
 - Create Staking pool, deposit, ping, check results
 
 ```
@@ -174,7 +178,7 @@ curl -s -d '{"jsonrpc": "2.0", "method": "validators", "id": "dontcare", "params
 curl -s -d '{"jsonrpc": "2.0", "method": "validators", "id": "dontcare", "params": [null]}' -H 'Content-Type: application/json' 127.0.0.1:3030 | jq -c '.result.current_validators[] | select(.account_id | contains ("pool_name"))'
 ```
 
-
+### Pricing
 ![img](./images/01_required.png)
 ![img](./images/02_minimum.png)
 ![img](./images/03_hetzner1.png)

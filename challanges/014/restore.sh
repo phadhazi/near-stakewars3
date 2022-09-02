@@ -9,7 +9,6 @@ echo $BACKUPDIR
 echo $TMPDIR
 
 if [ -d "$BACKUPDIR" ]; then
-  echo AAAA
   sudo systemctl stop neard.service
   wait
   echo "NEAR node was stopped" | ts
